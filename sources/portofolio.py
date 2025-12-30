@@ -63,7 +63,7 @@ PROJECTS: List[Dict] = [
         "name": "🌐 Professional Digital Portfolio",
         "description": "A dynamic web application built to showcase my engineering journey. Developed using <b>Streamlit</b> and <b>Python</b>, featuring interactive project filtering, and automated content rendering.",
         "tech": ["Python", "Streamlit", "CSS", "Cloud Deployment"],
-        "link": "https://github.com/HDiana10/portofolio_streamlit" # Or your specific repo link
+        "link": "https://github.com/HDiana10/portofolio_streamlit"
     },
     {
         "name": "🕹️ PCB Runner - MiniGame",
@@ -99,13 +99,11 @@ EDUCATION: List[Dict] = [
         """
     },
     {
-        "degree": "High School Diploma in Mathematics and Computer Science",
+        "degree": "High School Diploma in Mathematics and Informatics",
         "school": "“Mihai Eminescu” National College, Suceava",
         "period": "2019 - 2023",
         "details": """
-- Specialization: Intensive Computer Science track.
 - Baccalaureate Exam Score: 9.58/10.
-- Certification: Earned professional certification in Informatics with a final graduation project.
 - Activities: Selected participant in the Regional Center of Excellence for Informatics.
         """
     }
