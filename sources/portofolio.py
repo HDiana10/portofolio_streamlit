@@ -28,39 +28,59 @@ PROFILE = {
 }
 
 SKILLS: List[Dict] = [
-    {"name": "Python", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "numpy"}},
-    {"name": "C/C++", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "numpy"}},
+    {"name": "Python", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "Numpy"}},
+    {"name": "C/C++", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "Numpy"}},
 
-    {"name": "SystemVerilog", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "numpy"}}
+    {"name": "SystemVerilog", "level": 90, "keywords":{"ML", "Streamlit", "Pandas", "Numpy"}}
 ]
 
-EXPERIENCE: List[Dict] = [
-
-]
-
-PROJECTS: List[Dict] =[
+PROJECTS: List[Dict] = [
     {
-        "name": "PCB Runner - MiniGame",
-        "description": "An ETTI-themed version of the classic 'Trex Run' built with HTML and JavaScript, deployed via GitHub Pages.",
+        "name": "🔊 MP3 Player - Python",
+        "description": "Desktop application for audio playback developed with <b>Python</b> and <b>Custom Tkinter</b>. Features <b>playlist management</b>, shuffle, and real-time audio control via <b>pygame.mixer</b>.",
+        "tech": ["Python", "Pygame", "CustomTkinter", "UI/UX"],
+        "link": "https://github.com/HDiana10/Proiect_MP3"
+    },
+    {
+        "name": "🚦 FPGA Smart Traffic Light Controller",
+        "description": "A complex <b>System Verilog</b> implementation of a traffic management system. It features <b>finite state machine (FSM)</b> logic to handle multiple intersections, pedestrian sensors, and emergency vehicle overrides.",
+        "tech": ["System Verilog", "FPGA", "Digital Design", "Vivado",],
+        "link": "https://github.com/HDiana10/FPGA-Smart-Traffic-Light-Controller"
+    },
+    {
+        "name": "🛗 FPGA Elevator with Door Control",
+        "description": "A <b>System Verilog</b> implementation of an elevator control system. It manages <b>state transitions</b> between floors, prioritized request handling, and safety-critical <b>door control logic</b> using a <b>Finite State Machine (FSM)</b>.",
+        "tech": ["System Verilog", "FPGA", "Digital Design", "Control Systems", "Vivado"],
+        "link": "https://github.com/HDiana10/FPGA-Elevator-with-Door-Control"
+    },
+    {
+        "name": "🔢 4-bit ALU with 7-Segment Display",
+        "description": "Designed and implemented a <b>4-bit Arithmetic Logic Unit (ALU)</b> in <b>System Verilog</b>. The project includes logic for arithmetic operations and a decoder to visualize results on a <b>7-segment display</b>.",
+        "tech": ["System Verilog", "Digital Design", "Vivado"],
+        "link": "https://github.com/HDiana10/ALU-4-bit-with-7-Segment-Display"
+    },
+    {
+        "name": "🌐 Professional Digital Portfolio",
+        "description": "A dynamic web application built to showcase my engineering journey. Developed using <b>Streamlit</b> and <b>Python</b>, featuring interactive project filtering, and automated content rendering.",
+        "tech": ["Python", "Streamlit", "CSS", "Cloud Deployment"],
+        "link": "https://github.com/HDiana10/portofolio_streamlit" # Or your specific repo link
+    },
+    {
+        "name": "🕹️ PCB Runner - MiniGame",
+        "description": "An ETTI-themed version of the classic 'Trex Run' built with <b>HTML</b> and <b>JavaScript</b>, deployed via <b>GitHub Pages</b>.",
         "tech": ["JavaScript", "HTML5", "GitHub Pages"],
         "link": "https://hdiana10.github.io/run_pcb_run/"
     },
     {
-        "name": "MINERVA Research Project",
-        "description": "Applied research on battery lifespan optimization. Modeled the impact of dynamic operating modes on charge/discharge cycles.",
+        "name": "🔋 MINERVA Research Project",
+        "description": "Applied research on <b>battery lifespan optimization</b>. Modeled the impact of dynamic operating modes on charge/discharge cycles in <b>CCP</b> systems.",
         "tech": ["Data Modeling", "Research", "Battery Technology"],
         "link": ""
     },
     {
-        "name": "Electronic Piano",
-        "description": "A hardware project using Arduino UNO presented at the Student Scientific Communications conference.",
+        "name": "🎹 Electronic Piano",
+        "description": "A hardware project using <b>Arduino UNO</b> presented at the Student Scientific Communications conference. Built with custom <b>Embedded C</b> logic and analog circuit design.",
         "tech": ["Arduino", "Embedded C", "Circuit Design"],
-        "link": ""
-    },
-    {
-        "name": "Smart Alcohol Breathalyzer",
-        "description": "(Ongoing) A hardware project using the MQ-3 sensor and ESP32 to measure blood alcohol levels with LED warnings.",
-        "tech": ["ESP32", "Hardware Sensors", "Prototyping"],
         "link": ""
     }
 ]
@@ -97,21 +117,21 @@ VOLUNTEERING: List[Dict] = [
         "organization": "LSE (League of Electronics Students)",
         "period": "2023 - Present",
         "details": """
-- Active member of the <b>IT and TechForge</b> departments.<br>
-- Contributed to major events: Admission Simulation, General Culture Contest, Polifest, and LanParty.<br>
-- Served as an <b>Official Referee</b> for the international <b>Robochallenge</b> competition.<br>
-- Awarded <b>"Volunteer of the Week"</b> for outstanding commitment and organizational impact.
+        - Serve as a <b>Technical Assistant</b> within the IT department, providing <b>mentorship</b> and guidance for junior members on technical projects.<br>
+        - Contributed to major events: Admission Simulation, General Culture Contest, Polifest, and LanParty.<br>
+        - Served as an <b>Official Referee</b> for the international <b>Robochallenge</b> competition.<br>
+        - Awarded <b>"Volunteer of the Week"</b> for outstanding commitment and organizational impact.
         """,
-        "tech": ["Teamwork", "Event Management", "Technical Support"]
+        "tech": ["Teamwork", "Time Management", "Technical Support"]
     },
     {
         "role": "Project Coordinator & <b>Content Manager</b>",
         "organization": "AIVI (Informal Association of Voices for Inclusion)",
         "period": "2020 - 2024",
         "details": """
-- Managed the <b>#Cărticeală</b> (Literature), <b>#Cinematics</b>, and <b>#Science</b> departments.<br>
-- Administrated <b>WordPress</b> websites, authored technical and cultural reviews, and conducted interviews.<br>
-- Part of the <b>Official Media Team</b> for major international festivals: <b>FILIT, BSF, Animest, TIFF, and FFIR</b>.
+        - Managed the <b>#Cărticeală</b> (Literature), <b>#Cinematics</b>, and <b>#Science</b> departments.<br>
+        - Administrated <b>WordPress</b> websites, authored technical and cultural reviews, and conducted interviews.<br>
+        - Part of the <b>Official Media Team</b> for major international festivals: <b>FILIT, BSF, Animest, TIFF, and FFIR</b>.
         """,
         "tech": ["WordPress", "Project Management", "Digital Media", "Copywriting"]
     },
@@ -120,8 +140,8 @@ VOLUNTEERING: List[Dict] = [
         "organization": "GREEN in Hunedoara (EUTeens4Green)",
         "period": "2023 - 2024",
         "details": """
-- Organized and coordinated the <b>GREENiH project</b>, promoting sustainable living among youth.<br>
-- Facilitated <b>educational workshops</b> and managed project planning and stakeholder communication.
+        - Organized and coordinated the <b>GREENiH project</b>, promoting sustainable living among youth.<br>
+        - Facilitated <b>educational workshops</b> and managed project planning and stakeholder communication.
         """,
         "tech": ["Leadership", "Strategic Planning", "Sustainability Education"]
     },
@@ -130,8 +150,8 @@ VOLUNTEERING: List[Dict] = [
         "organization": "ESA Moon Camp & NASA Space Settlement Workshop",
         "period": "2022 - 2023",
         "details": """
-- Taught <b>astro-physics modules</b> to high school students.<br>
-- Managed <b>team coordination</b> and project communication for aerospace design challenges.
+        - Taught <b>astro-physics modules</b> to high school students.<br>
+        - Managed <b>team coordination</b> and project communication for aerospace design challenges.
         """,
         "tech": ["Public Speaking", "Astrophysics", "Leadership"]
     },
@@ -140,8 +160,8 @@ VOLUNTEERING: List[Dict] = [
         "organization": "Sustainable in the Citadel (Ateliere Vizuale)",
         "period": "2022 - 2023",
         "details": """
-- Facilitated communication and <b>guided participants</b> during visual workshops.<br>
-- Responsible for <b>editing visual materials</b> and general project communication.
+        - Facilitated communication and <b>guided participants</b> during visual workshops.<br>
+        - Responsible for <b>editing visual materials</b> and general project communication.
         """,
         "tech": ["Facilitation", "Media Editing", "Empathic Communication"]
     }
@@ -149,26 +169,117 @@ VOLUNTEERING: List[Dict] = [
 
 CONTESTS: List[Dict] = [
     {
-        "name": "Electron 2025",
-        "organizer": "UPB - Faculty of Electronics",
-        "year": "2025",
+        "name": "🥇 Code Quest 2025 - Applied Electronics",
+        "organizer": "SIE, CAMPUS",
+        "result": "1st Place (Winners)",
+        "details": "Engineered a hardware-level <b>Enigma Machine</b> using <b>SystemVerilog</b> within 12 hours. Implemented logic for <b>VGA display</b>, <b>PS/2 keyboard</b> input, and Enigma Machine encoding mechanism.",
+        "tech": ["SystemVerilog", "Vivado", "VGA", "UART"]
+    },
+    {
+        "name": "🏆 Electron 2025",
+        "organizer": "UPB - Faculty of Electronics, Telecomunications, and Information Technology",
         "result": "7th Place Overall",
-        "details": "High-level technical competition focusing on electronics and circuit design."
+        "details": "A 24-hour <b>Capture The Flag (CTF)</b> competition. Solved complex tasks across <b>Electronics</b>, <b>Digital Design</b>, <b>PSpice circuit simulation</b>, Python, and signal processing (audio editing).",
+        "tech": ["CTF", "Vivado", "PSpice", "Python", "Adacity"]
     },
     {
-        "name": "ESA Moon Camp Challenge",
+        "name": "🛰️ ESA Moon Camp Challenge",
         "organizer": "European Space Agency (ESA)",
-        "year": "2022",
-        "result": "3rd Place - Pioneers Category",
-        "details": "International challenge to design a functional lunar base using 3D modeling and scientific principles."
+        "result": "3rd Place - Pioneers",
+        "details": "Designed a sustainable <b>lunar base</b> focusing on habitability and energy.",
+        "tech": ["3D Modeling", "Aerospace Design"]
     },
     {
-        "name": "Pia Hunt",
+        "name": "🔍 Pia Hunt",
         "organizer": "Student Technical Competition",
-        "year": "2024",
         "result": "Honorable Mention",
-        "details": "Technical scavenger hunt and problem-solving challenge for engineering students."
+        "details": "Logic and rapid problem-solving challenge.",
+        "tech": ["Logic", "Teamwork"]
     }
+]
+
+SCHOOLS: List[Dict] = [
+    {
+        "name": "🤖 ETTI-AI Summer School",
+        "organizer": "DCAE Department",
+        "period": "September 2025",
+        "details": "Basics of <b>ML/AI</b>: handled data (images, vectors, audio) using <b>Pandas/NumPy</b>. Developed mini-projects in Computer Vision, Speech to Text, Biomedical.",
+        "tech": ["Python", "Machine Learning", "Embedded AI"]
+    },
+    {
+        "name": "🔌 Infineon Digital Circuits Summer School",
+        "organizer": "Infineon Technologies",
+        "period": "7th - 25th July 2025",
+        "details": "Professional workshop on <b>digital design flow</b>, hardware description, and <b>verification</b>.",
+        "tech": ["Digital Design", "Verification", "System Verilog"]
+    },
+    {
+        "name": "🛰️ ROSPIN-SAT-1 Summer School",
+        "organizer": "ROSPIN",
+        "period": "June - August 2025",
+        "details": "Specialized training in <b>Satellite Data Processing</b> and telemetry handling.",
+        "tech": ["Satellite Data", "Signal Processing"]
+    },
+    {
+        "name": "🛡️ Security Summer School, Essentials",
+        "organizer": "UPB",
+        "period": "22nd June - 27th July 2025",
+        "details": "Fundamental concepts of <b>Cybersecurity</b>, network security, and cryptography.",
+        "tech": ["Cybersecurity", "Network Security", "Criptography"]
+    },
+    {
+        "name": "EPiC Summer School",
+        "organizer": "European Partnership",
+        "period": "18th - 20th June 2025",
+        "details": "International program on innovative campus technologies.",
+        "tech": ["Innovation", "Collaboration"]
+    }
+]
+
+SCHOOLS: List[Dict] = [
+    {
+        "name": "🤖 ETTI-AI Summer School",
+        "organizer": "UPB - DCAE Department",
+        "period": "September 2025",
+        "details": "Intensive program on <b>ML/AI fundamentals</b>. Mastered <b>NumPy</b> and <b>Pandas</b> for data manipulation. Developed mini-projects in <b>Computer Vision</b>, Speech-to-Text, and <b>Embedded AI</b>.",
+        "tech": ["Python", "Machine Learning", "Embedded AI"]
+    },
+    {
+        "name": "🔌 Infineon Digital Circuits, Design & Verification",
+        "organizer": "Infineon Technologies",
+        "period": "July 2025",
+        "details": "Professional-grade workshop on the <b>digital design flow</b>. Focused on hardware description, <b>verification methodologies</b>, and industry-standard circuit design.",
+        "tech": ["Digital Design", "Verification", "VLSI"]
+    },
+    {
+        "name": "🛡️ Security Summer School, Essentials",
+        "organizer": "UPB / Cybersecurity Partners",
+        "period": "June - July 2025",
+        "details": "Deep dive into <b>Cybersecurity fundamentals</b>. Explored network security, cryptography basics, and hardware-level security vulnerabilities.",
+        "tech": ["CTF", "Criptography", "Cybersecurity", "Network Security"]
+    },
+    {
+        "name": "🚗 NXP - Eat, Sleep, Code, Repeat",
+        "organizer": "NXP Semiconductors",
+        "period": "Nov 2025 - Present",
+        "details": "Long-term <b>Automotive Embedded Systems</b> program. Developing an integrated car simulation by programming distributed nodes for <b>braking, steering,comfort systems and more.</b>.",
+        "tech": ["Embedded C", "Automotive", "Microcontrollers"]
+    },
+    {
+        "name": "🛰️ ROSPIN-SAT-1 Summer School",
+        "organizer": "ROSPIN",
+        "period": "June - August 2025",
+        "details": "Comprehensive school on <b>Satellite Data Processing</b>. Learned to handle telemetry and process complex data streams from space missions.",
+        "tech": ["Satellite Data", "Signal Processing"]
+    },
+    {
+        "name": "🇪🇺 EPiC Summer School",
+        "organizer": "European Partnership for Innovative Campus",
+        "period": "June 2025",
+        "details": "International collaboration focused on innovative technologies and cross-disciplinary engineering solutions.",
+        "tech": ["Innovation", "International Collaboration"]
+    },
+    # Keep your previous contests (Electron 2025, ESA, etc.) below...
 ]
 
 # UTILITIES
@@ -179,8 +290,6 @@ def chips(items: List[str]) -> str:
 
 def collect_all_tech() -> List[str]:
     tech = set()
-    for e in EXPERIENCE:
-        tech.update(e.get("tech", []))
     
     for p in PROJECTS:
         tech.update(p.get("tech", []))
@@ -191,6 +300,8 @@ def collect_all_tech() -> List[str]:
             tech.add(k)
 
     return sorted(tech)
+
+
 
 ## STYLE
 
@@ -231,45 +342,62 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # SIDEBAR
+# SIDEBAR
 with st.sidebar:
-    st.title("Hello there!")
-    st.write("This is a simple Portofolio")
+    # 2. Name and Greeting
+    st.title(f"Hi! I'm {PROFILE['name']}")
+    st.write("Welcome to my digital portfolio!")
 
-    st.markdown("""**CONTACT**  
-                [Email](mailto:{email})  
-                [GitHub]({gh})  
-                """.format(email=PROFILE['email'], gh=PROFILE['github']))
+    st.markdown("---")
     
-    st.markdown("<chr>", unsafe_allow_html=True)
+    # 3. Contact Info with Emojis & Links
+    st.subheader("📬 Contact Info")
+    
+    # Email
+    st.markdown(f"📧 **Email:** [{PROFILE['email']}](mailto:{PROFILE['email']})")
+    # LinkedIn
+    st.markdown(f"🔗 **LinkedIn:** [View Profile]({PROFILE['linkedin']})")
+    
+    # GitHub
+    st.markdown(f"💻 **GitHub:** [View Repos]({PROFILE['github']})")
+    
+    st.markdown("---")
 
-    st.caption("Filters")
+    # 4. Filters (Keeping your existing logic)
+    st.caption("🔍 Project Filters")
     all_tech = collect_all_tech()
-    selected = st.multiselect("Filter by tech", options=all_tech, placeholder="e.g. Python, C")
+    selected = st.multiselect("Filter by tech", options=all_tech, placeholder="e.g. SystemVerilog")
     st.session_state['filters'] = set(selected)
 
-    st.markdown("<hr>", unsafe_allow_html=True)
-    st.button(
-        label="Download CV"
+    st.markdown("---")
+    
+    # 5. Download Resume Button
+    # For now, this is a placeholder. To make it work, you'd add: data=open("resume.pdf", "rb")
+    st.download_button(
+        label="📄 Download My CV",
+        data="Your PDF data here",
+        file_name="Diana_Hincu_CV.pdf",
+        mime="application/pdf",
+        use_container_width=True
     )
     
 # HEADER
 
-left, right = st.columns([3,1])
+left, right = st.columns([1, 3])
 
-with left:
+with right:
     st.markdown(f"## {PROFILE["name"]}")
     st.write(f"**{PROFILE['role']}**")
     st.caption(f"📍 {PROFILE['location']} | 📧 {PROFILE['email']}")
     st.info(f"💡 {PROFILE['tagline']}")
-with right:
-    st.metric("Years Experience", value="{n}+".format(n=max(1, 5)))
-    st.metric("Projects", value=str(len(PROJECTS)))
+with left:
+    st.image("me.png", width=300, use_container_width=True) 
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # TABS
 
-about_tab, proj_tab, skills_tab, volunteer_tab, edu_tab = st.tabs(["About", "Projects", "Skills", "Volunteer", "Education"])
+about_tab,  edu_tab, proj_tab, contests_tab, volunteer_tab, skills_tab, = st.tabs(["About", "Education", "Projects", "Contests & SS", "Volunteer", "Skills"])
 
 with about_tab:
     st.subheader("About")
@@ -284,7 +412,7 @@ with about_tab:
 
 with proj_tab:
     st.subheader("Projects")
-    st.write("Im Diana and i want a jov. desperately, Please. I will make how many coffees you want + 1")
+    st.write("Here are some of the projects I have done/ am working on.")
 
     cols = st.columns(2)
     i = 0
@@ -306,16 +434,49 @@ with proj_tab:
                         ), unsafe_allow_html=True)
             i += 1
 
-with skills_tab:
-    st.subheader("Skills")
-    for s in SKILLS:
-        col1, col2 = st.columns([1,3])
-        with col1:
-            st.write(f"**{s['name']}**")
-            if s.get("keywords"):
-                st.caption(",".join(s['keywords']))
-        with col2:
-            st.progress(int(s.get("level", 0)))
+with contests_tab:
+    # --- 1. CONTESTS SECTION ---
+    st.subheader("🏆 Competitive Achievements")
+    c_cols = st.columns(2)
+    for idx, c in enumerate(CONTESTS):
+        # Filter Logic
+        if st.session_state.get("filters") and not (st.session_state["filters"] & set(c.get("tech", []))):
+            continue
+            
+        with c_cols[idx % 2]:
+            st.markdown(f"""
+                <div class='card' style='margin-bottom: 15px; height: auto;'>
+                    <div style='display: flex; justify-content: space-between; align-items: flex-start;'>
+                        <h5 style='margin:0;'>{c['name']}</h5>
+                        <span style='color: #ff4b4b; font-weight: bold; font-size: 0.8rem;'>{c.get('result', '')}</span>
+                    </div>
+                    <p class='muted' style='margin:4px 0; font-size: 0.8rem;'><i>{c['organizer']}</i></p>
+                    <div style='font-size: 0.8rem; margin-top: 8px; line-height: 1.4;'>{c['details']}</div>
+                    <div style='margin-top:10px;'>{chips(c.get('tech', []))}</div>
+                </div>
+            """.replace("\n", ""), unsafe_allow_html=True)
+
+    st.write("---")
+
+    # --- 2. SUMMER SCHOOLS SECTION ---
+    st.subheader("☀️ Technical Summer Schools")
+    s_cols = st.columns(2)
+    for idx, s in enumerate(SCHOOLS):
+        # Filter Logic
+        if st.session_state.get("filters") and not (st.session_state["filters"] & set(s.get("tech", []))):
+            continue
+            
+        with s_cols[idx % 2]:
+            st.markdown(f"""
+                <div class='card' style='margin-bottom: 15px; height: auto;'>
+                    <h5 style='margin:0;'>{s['name']}</h5>
+                    <p style='margin:4px 0; font-size: 0.8rem; font-weight: bold; color: #ff4b4b;'>{s['organizer']}</p>
+                    <p class='muted' style='font-size: 0.75rem; margin:0;'>📅 {s['period']}</p>
+                    <div style='font-size: 0.8rem; margin-top: 8px; line-height: 1.4;'>{s['details']}</div>
+                    <div style='margin-top:10px;'>{chips(s.get('tech', []))}</div>
+                </div>
+            """.replace("\n", ""), unsafe_allow_html=True)
+
 
 with edu_tab:
     st.subheader("Education")
@@ -342,7 +503,6 @@ with edu_tab:
         # 3. Use .replace("\n", "") to prevent raw code/divs from showing
         st.markdown(card_html.replace("\n", ""), unsafe_allow_html=True)
 
-# --- VOLUNTEERING TAB ---
 with volunteer_tab:
     st.subheader("🤝 Community Involvement")
     for v in VOLUNTEERING:
@@ -364,3 +524,38 @@ with volunteer_tab:
                 </div>
             </div>
         """.replace("\n", ""), unsafe_allow_html=True)
+        
+with skills_tab:
+    st.subheader("🛠️ Technical Proficiency")
+    st.write("My technical stack is validated through high-pressure competitions (Code Quest 1st Place) and industry-led programs (NXP, Infineon).")
+
+    # Create two columns for a clean split between Hardware and Software
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("#### 🔌 Hardware & Digital Design")
+        st.write("- **HDLs:** SystemVerilog")
+        st.write("- **Interface Design:** VGA Controller, UART/Serial, PS/2 Keyboard Protocols")
+        st.write("- **EDA Tools:** Vivado (Synthesis & Implementation), PSpice, Orcad")
+        st.write("- **Core Concepts:** Digital Integrated Circuits, Circuit Analysis, RTL Design")
+        
+    with col2:
+        st.markdown("#### 💻 Software & AI")
+        st.write("- **Programming:** Python, C/C++, JavaScript, Assembly (AMP)")
+        st.write("- **AI/ML:** Computer Vision, NumPy, Pandas (Data maneuvering for Images/Audio)")
+        st.write("- **Embedded Systems:** Automotive Node Programming (NXP), Microcontrollers (Arduino/ESP32)")
+        st.write("- **Tools & DevOps:** Git, Streamlit, WordPress, Linux basics")
+
+    st.markdown("---")
+    
+    # Professional & Soft Skills Section
+    st.subheader("🌟 Professional & Leadership")
+    
+    # We use st.info and st.success to make these high-impact accomplishments stand out
+    st.success("""
+    **🏆 Project Execution & Leadership:** Proven ability to lead and execute complex technical projects under extreme time constraints, evidenced by a **1st Place win at Code Quest 2025**.
+    """)
+    
+    st.info("""
+    **🤝 Technical Mentorship:** Active mentor within the **LSE IT Department**, facilitating the onboarding of junior members and providing guidance on codebase structure and hardware prototyping.
+    """)
